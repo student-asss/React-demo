@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'Roboto-Regular';
+    font-family: 'Nunito-Regular';
+	src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    src: url('../fonts/Nunito-Regular.ttf') format('truetype');
+}
+
+html {
+    height: 100vh;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
+
+    body {
+        min-height: 100%;
+        height: 100%;
+        // background-image: url('../../assets/img/bg1.jpg');
+        // background-position: center;
+        // background-size: cover;
+        // background-repeat: no-repeat;
+
+        #root {
+            min-height: 100%;
+            height: 100%;
+        }
+
+        .container-fluid {
+            max-width: 1140px;
+            padding: 0;
+        }
+    }
+}
+
+.page-enter {
+    opacity: 0;
+}
+
+.page-enter-active {
+    opacity: 1;
+    transition: opacity 400ms;
+    transition-delay: 600ms;
+}
+
+.page-exit {
+    opacity: 1;
+}
+
+.page-exit-active {
+    opacity: 0;
+    transition: opacity 400ms;
+}

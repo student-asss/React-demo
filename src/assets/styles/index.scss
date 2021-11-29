@@ -1,0 +1,19 @@
+// FONT
+// @import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Oswald:wght@300;400;500;700&family=Tourney:wght@300;500;700;900&display=swap');
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Fuggles', cursive;
+// font-family: 'Tourney', cursive;
+// font-family: 'Nunito', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+// BOOTSTRAP SASS
+@import '~bootstrap/scss/bootstrap.scss';
+
+//  HEADER STYLE
+@import './common.scss';
+@import './header.scss';
+
+//  PAGES STYLE
+@import './pages.scss';
+
+

@@ -1,0 +1,118 @@
+nav.navbar {
+    background-color: #a59a86;
+    padding: 10px 80px;
+
+    @include media-breakpoint-down(md) {
+        padding: 10px 30px;
+
+        .navbar-collapse {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        a.nav-link:hover {
+            font-weight: 500;
+            font-size: 20px;
+            color: #eeeef0;
+        }
+    }
+
+    // @include media-breakpoint-down(md) {
+    //     background: blue !important; 
+    // }   
+
+    // @include media-breakpoint-down(sm) {
+    //     background: green !important;
+    // } 
+        
+    .logo {
+        width: 36px;
+        font-family: 'Nunito-Regular';
+        font-size: 1.25rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+        border: 2px solid #dbd7d8;
+        color: #dbd7d8;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+            color: #eeeef0;
+            border-color: #eeeef0;
+            cursor: pointer;
+        }
+    }
+
+    a.text-info {
+        color: #eeeef0;
+    }
+
+    a.nav-link.active {
+        color: #394039;
+    }
+
+    button.navbar-toggler {
+        width: 30px;
+        height: 30px;
+        font-size: 1.25rem;
+        padding: 1px 3px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+
+        .navbar-toggler-icon {
+            width: 24px;
+            height: 24px;
+            align-items: center;
+            text-align: center;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(238,238,240)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+
+    }
+
+    a.nav-link {
+        text-transform: uppercase;
+        color: #dbd7d8;
+        transition: .3s ease;
+        cursor: pointer;
+
+        &:hover {
+            font-weight: 500;
+            color: #eeeef0;
+            transition: .3s ease;  
+        }
+
+        &:active {
+            font-weight: 500;
+            color: #eeeef0;
+            transition: .3s ease;
+        }
+
+        &:focus {
+            font-weight: 500;
+            color: #eeeef0;
+            transition: .3s ease;
+        }
+    }
+}
+
+// .navbar {
+//     background: red !important;
+
+//     @include media-breakpoint-up(sm) {
+//         background: blue !important; 
+//     }   
+
+//     @include media-breakpoint-up(md) {
+//         background: green !important;
+//     }   
+// }
